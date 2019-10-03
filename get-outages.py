@@ -65,7 +65,7 @@ onevizion.Config['Err'] = False
 
 # Get Website alarm list
 TraceMessage("Getting Alarm List for Websites.")
-client = boto3.client(client = boto3.client(
+client = boto3.client(
 	'cloudwatch',
 	region_name=AWSRegion,
 	aws_access_key_id=AWSAccessKey,
