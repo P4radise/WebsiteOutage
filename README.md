@@ -16,7 +16,9 @@ Example:
 		"Password": "password1"
 	},
 	"AWSConfig": {
-		"Region":"us-east-1"
+		"Region":"us-east-1",
+		"AccessKey": "XXXXXXXXXXXXXXXXx",
+		"SecretAccessKey":"YYYYYYYYYYYYYYYYYYYYYYYYYY"
 	}
 }
 ```

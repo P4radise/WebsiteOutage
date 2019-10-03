@@ -40,6 +40,8 @@ ParameterData = onevizion.GetParameters(ParametersFile)
 
 # Setup Variables
 AWSRegion=ParameterData["AWSConfig"]["Region"]
+AWSAccessKey=ParameterData["AWSConfig"]["AccessKey"]
+AWSSecretKey=ParameterData["AWSConfig"]["SecretAccessKey"]
 DateFormatStr = "%Y-%m-%d %H:%M:%S"
 
 FileNameHead = __file__[:-3]
@@ -63,7 +65,12 @@ onevizion.Config['Err'] = False
 
 # Get Website alarm list
 TraceMessage("Getting Alarm List for Websites.")
-client = boto3.client('cloudwatch',region_name=AWSRegion)
+client = boto3.client(client = boto3.client(
+	'cloudwatch',
+	region_name=AWSRegion,
+	aws_access_key_id=AWSAccessKey,
+	aws_secret_access_key=AWSSecretKey
+	)
 
 
 AlarmsList  = client.describe_alarms(

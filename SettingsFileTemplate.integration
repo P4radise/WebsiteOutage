@@ -1,10 +1,12 @@
 {
 	"trackor.onevizion.com": {
-		"url":"trackor.onevizion.com",
+		"url": "trackor.onevizion.com",
 		"UserName": "username",
 		"Password": "password1"
 	},
 	"AWSConfig": {
-		"Region":"us-east-1"
+		"Region":"us-east-1",
+		"AccessKey": "XXXXXXXXXXXXXXXXx",
+		"SecretAccessKey":"YYYYYYYYYYYYYYYYYYYYYYYYYY"
 	}
 }
