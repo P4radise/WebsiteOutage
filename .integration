@@ -1,1 +1,1 @@
-command = ./executable_file.sh
+command = python3 get-outages.py

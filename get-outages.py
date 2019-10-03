@@ -39,7 +39,7 @@ TraceMessage = onevizion.TraceMessage
 ParameterData = onevizion.GetParameters(ParametersFile)
 
 # Setup Variables
-AWSRegion=["AWSConfig"]["Region"]
+AWSRegion=ParameterData["AWSConfig"]["Region"]
 DateFormatStr = "%Y-%m-%d %H:%M:%S"
 
 FileNameHead = __file__[:-3]
